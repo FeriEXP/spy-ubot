@@ -9,7 +9,7 @@ bot = Client(
 )
 
 asst = Client(
-  "spy",
+  "spy_ubot",
   api_id = config.API_ID,
   api_hash = config.API_HASH,
   bot_token = config.TOKEN,
