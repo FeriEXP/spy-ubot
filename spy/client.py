@@ -1,7 +1,7 @@
 from spy.config import config
 from pyrogram import Client
 
-bot = Client(
+spy = Client(
     session_name=config.SESSION,
     api_id=config.API_ID,
     api_hash=config.API_HASH,
