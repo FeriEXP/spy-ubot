@@ -1,0 +1,62 @@
+{
+    "name": "Spy-ubot",
+    "description": "The python3 based simple bot",
+    "logo": "",
+    "repository": "https://github.com/FeriEXP/spy-ubot",
+    "keyword": [
+        "telegram",
+        "pyrogram",
+        "userbot",
+        "python3"
+    ],
+    "env": {
+        "API_ID": {
+        "description": "your api id get from my.telegram.org",
+        "value": " ",
+        "required": true
+        },
+        "API_HASH": {
+            "description": "your api hash get from my.telegram.org",
+            "value": " ",
+            "required": true
+        },
+        "SESSION": {
+            "description": "A pyrogram string session get one from",
+            "value": " ",
+            "required": true
+        },
+        "OWNER_ID": {
+            "description": "Your telegram ID as number",
+            "value": " ",
+            "required": true
+        },
+        "HNDLR": {
+            "description": "Your Command hndlr to run commands. Leave it for default dot(.)",
+            "value": ".",
+            "required": true
+        },
+        "ALV_PIC": {
+            "description": "picture that your bot will display in alive",
+            "value": " ",
+            "required": false
+        },
+        "ALV_TEXT": {
+            "description": "Text which will be shown as custom text",
+            "value": " ",
+            "required": true
+        }
+        
+    },
+    "addons": [{
+        "plan": "heroku-postgresql",
+        "options": {
+          "version": "12"
+        }
+      }],
+      "buildpacks": [{
+        "url": "heroku/python"
+      },
+      {
+        "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+      }]
+}
